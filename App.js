@@ -36,7 +36,7 @@ const MapScreen = () => {
       // Request permission for location access
       const { status } = await requestForegroundPermissionsAsync();
 
-      if (status === "granted") {
+      if (status === "granted") { 
         // Fetch the last known location
         const lastKnownLocation = await getLastKnownPositionAsync({});
         setLocation(lastKnownLocation);
